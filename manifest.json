@@ -3,7 +3,7 @@
   "description": "Finds HTML comments in the current page",
   "version": "1.0.0",
   "manifest_version": 3,
-  "homepage_url": "https://dimden.dev",
+  "homepage_url": "https://github.com/dimdenGD/html-comment-finder",
   "background": {
     "service_worker": "background.js"
   },
