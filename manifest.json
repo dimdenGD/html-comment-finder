@@ -1,7 +1,7 @@
 {
   "name": "HTML Comments Finder",
   "description": "Finds HTML comments in the current page",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "homepage_url": "https://github.com/dimdenGD/html-comment-finder",
   "background": {

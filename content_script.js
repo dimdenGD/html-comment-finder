@@ -13,11 +13,11 @@ function getAllComments(rootElem) {
 }
 
 setTimeout(() => {
-    chrome.runtime.sendMessage({action: "set", comments: getAllComments(document.body).filter(c => c.trim().length > 0)});
+    chrome.runtime.sendMessage({action: "set", comments: getAllComments(document).filter(c => c.trim().length > 0)});
 }, 500);
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if(request.action === "get") {
-        sendResponse(getAllComments(document.body).filter(c => c.trim().length > 0));
+        sendResponse(getAllComments(document).filter(c => c.trim().length > 0));
     }
 });
